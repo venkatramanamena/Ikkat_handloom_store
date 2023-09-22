@@ -15,8 +15,10 @@ $email=mysqli_real_escape_string($conn,$_POST['email']);
     else{
         $insert="insert into login_register(name,email,password)  values('$name','$email','$pass')";
         mysqli_query( $conn,$insert);
-        header('location:login.php');
-          $message[''] = 'registered sucessfully !';
+         $message[''] = 'registered sucessfully !';
+     
+       
+         
        
     }
     
